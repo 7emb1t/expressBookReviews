@@ -1,0 +1,6 @@
+Task 13 - public GitHub URL of general.js:
+
+https://github.com/7emb1t/expressBookReviews/blob/main/final_project/router/general.js
+
+Repository (Task 14):
+https://github.com/7emb1t/expressBookReviews
