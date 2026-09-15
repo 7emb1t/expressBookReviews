@@ -1,0 +1,6 @@
+curl -X POST http://localhost:8800/customer/login -H "Content-Type: application/json" -d "{\"username\":\"lembit\",\"password\":\"password123\"}" -c cookies_lembit.txt
+{"message":"Customer successfully logged in","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoicGFzc3dvcmQxMjMiLCJpYXQiOjE3ODk0OTY1ODIsImV4cCI6MTc4OTUwMDE4Mn0.qarftu3OcKRhchmGhT9gKsuVNTRlWSecMnwl9aBUkUk"}
+
+curl -X POST http://localhost:8800/customer/login -H "Content-Type: application/json" -d "{\"username\":\"lembit\",\"password\":\"wrongpassword\"}"
+{"message":"Invalid Login. Check username and password"}
+

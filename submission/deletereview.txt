@@ -1,0 +1,8 @@
+curl -X DELETE http://localhost:8800/customer/auth/review/1 -b cookies_lembit.txt
+{"message":"Review for the ISBN 1 posted by the user lembit deleted.","reviews":{"maria":"Maria's take: a powerful read."}}
+
+curl http://localhost:8800/review/1
+{
+    "maria": "Maria's take: a powerful read."
+}
+

@@ -1,0 +1,37 @@
+curl http://localhost:8800/author/Chinua%20Achebe
+{
+    "booksbyauthor": {
+        "1": {
+            "author": "Chinua Achebe",
+            "title": "Things Fall Apart",
+            "reviews": {}
+        }
+    }
+}
+
+curl http://localhost:8800/author/Unknown
+{
+    "booksbyauthor": {
+        "4": {
+            "author": "Unknown",
+            "title": "The Epic Of Gilgamesh",
+            "reviews": {}
+        },
+        "5": {
+            "author": "Unknown",
+            "title": "The Book Of Job",
+            "reviews": {}
+        },
+        "6": {
+            "author": "Unknown",
+            "title": "One Thousand and One Nights",
+            "reviews": {}
+        },
+        "7": {
+            "author": "Unknown",
+            "title": "Njál's Saga",
+            "reviews": {}
+        }
+    }
+}
+

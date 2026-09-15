@@ -1,0 +1,12 @@
+curl -X POST http://localhost:8800/register -H "Content-Type: application/json" -d "{\"username\":\"lembit\",\"password\":\"password123\"}"
+{"message":"User lembit successfully registered. Now you can login."}
+
+curl -X POST http://localhost:8800/register -H "Content-Type: application/json" -d "{\"username\":\"lembit\",\"password\":\"password123\"}"
+{"message":"User lembit already exists. Please choose another username."}
+
+curl -X POST http://localhost:8800/register -H "Content-Type: application/json" -d "{\"username\":\"maria\"}"
+{"message":"Username and password are required."}
+
+curl -X POST http://localhost:8800/register -H "Content-Type: application/json" -d "{\"username\":\"maria\",\"password\":\"maria456\"}"
+{"message":"User maria successfully registered. Now you can login."}
+

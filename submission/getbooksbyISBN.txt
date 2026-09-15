@@ -1,0 +1,10 @@
+curl http://localhost:8800/isbn/1
+{
+    "author": "Chinua Achebe",
+    "title": "Things Fall Apart",
+    "reviews": {}
+}
+
+curl http://localhost:8800/isbn/99
+{"message":"Book with ISBN 99 not found."}
+

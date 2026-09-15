@@ -1,0 +1,15 @@
+curl -X PUT "http://localhost:8800/customer/auth/review/1?review=A%20timeless%20classic%20on%20colonial%20Nigeria." -b cookies_lembit.txt
+{"message":"The review for the book with ISBN 1 has been added.","reviews":{"lembit":"A timeless classic on colonial Nigeria."}}
+
+curl -X PUT "http://localhost:8800/customer/auth/review/1?review=Updated%20review%3A%20even%20better%20on%20a%20second%20read." -b cookies_lembit.txt
+{"message":"The review for the book with ISBN 1 has been updated.","reviews":{"lembit":"Updated review: even better on a second read."}}
+
+curl -X PUT "http://localhost:8800/customer/auth/review/1?review=Maria%27s%20take%3A%20a%20powerful%20read." -b cookies_maria.txt
+{"message":"The review for the book with ISBN 1 has been added.","reviews":{"lembit":"Updated review: even better on a second read.","maria":"Maria's take: a powerful read."}}
+
+curl http://localhost:8800/review/1
+{
+    "lembit": "Updated review: even better on a second read.",
+    "maria": "Maria's take: a powerful read."
+}
+
